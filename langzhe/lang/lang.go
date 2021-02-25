@@ -1,4 +1,4 @@
-package lang
+package langzhe
 
 func Hi() string {
 	return "Hi"
