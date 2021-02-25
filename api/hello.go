@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/Jasson/hellogozero/langzhe/lang"
 
 	"github.com/Jasson/hellogozero/api/internal/config"
 	"github.com/Jasson/hellogozero/api/internal/handler"
@@ -16,7 +17,7 @@ var configFile = flag.String("f", "etc/hello-api.yaml", "the config file")
 
 func main() {
 	flag.Parse()
-
+	lang.Hi()
 	var c config.Config
 	conf.MustLoad(*configFile, &c)
 
